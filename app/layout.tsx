@@ -30,7 +30,7 @@ export default function RootLayout({
       >
 
         <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-5 px-10 bg-white dark:bg-black sm:items-start">
+          <main className="flex min-h-screen w-full max-w-7xl flex-col py-5 px-10 bg-white dark:bg-black sm:items-start">
             <div className="flex flex-row items-center gap-4">
             <Image
               className="dark:invert"
@@ -46,7 +46,8 @@ export default function RootLayout({
             <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full">Resume</button>
             </div>
             
-            <div>
+            <div className="grow w-full py-10">
+
               {children}
             </div>
 
